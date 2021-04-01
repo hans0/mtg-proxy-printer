@@ -29,7 +29,7 @@ function App() {
       <Card card={cards[0]}/>
       <Card card={cards[1]}/>
       <DFCard card={cards[2]}/>
-      <Card card={cards[0]}/>
+      <DFCard card={cards[3]}/>
       <Card card={cards[0]}/>
       <Card card={cards[0]}/>
 

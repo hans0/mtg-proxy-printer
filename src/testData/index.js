@@ -34,7 +34,23 @@ export const cards = [
     dfbody:[
       'At the beginning of your upkeep, reveal cards from the top of your library until you reveal a creature or planeswalker card. Put that card onto the battlefield and the rest on the bottom of your library in a random order.'
     ]
+  },
+  {
+    name:'Delver of Secrets', 
+    type:'Creature — Human Wizard',
+    body: [
+      'At the beginning of your upkeep, look at the top card of your library. You may reveal that card. If an instant or sorcery card is revealed this way, transform Delver of Secrets.'    
+    ],
+    cmc:'{U}',
+    pt: '1/1',
+    dfname:'Insectile Aberration',
+    dfcmc:'{U}',
+    dftype:'Creature - Human Insect',
+    dfbody:[
+      'Flying'  
+    ],
+    dfpt: '3/2'
 
-  }
+  },
 ]
 

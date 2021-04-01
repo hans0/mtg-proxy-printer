@@ -18,20 +18,20 @@
   padding: 1px;
   font-size: .8em;
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .card-header-name {
   text-align: left;
   font-size: .9em;
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-.card-header-cmc {
+/* .card-header-cmc {
 
   border: 1px solid black;
-}
+} */
 
 .card-body {
   font-size: .7em;
@@ -44,10 +44,11 @@
   text-align: left;
   /* border: 1px solid black; */
 }
+
 .card-body-line {
 
   /* text-align: left; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
 }
 
@@ -55,6 +56,13 @@
   display: flex;
   justify-content: flex-end;
   padding:10px;
+}
+
+.df-card-power-toughness {
+  display: flex;
+  justify-content: flex-end;
+  padding:10px;
+  transform: rotate(180deg)
 }
 
 .df-card-header {
@@ -65,13 +73,13 @@
 
   transform: rotate(180deg);
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-/* .df-card-body {
+.df-card-body {
   transform: rotate(180deg)
-} */
+}
 
-/* .df-card-body-line {
+.df-card-body-line {
   transform: rotate(180deg);
-} */
+}

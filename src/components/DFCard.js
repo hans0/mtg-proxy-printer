@@ -30,22 +30,27 @@ const DFCard = (props) => {
       <div className='card-power-toughness'>
         {props.card.pt}
       </div>
+      {props.card.dfpt && 
+        <div className='df-card-power-toughness'>
+          {props.card.dfpt}
+        </div>
+      }
       <div className='card-body'>
         {props.card.dfbody.map((line) => 
-          <div className='card-body-line'>
+          <div className='df-card-body-line'>
             {line}
           </div>
         )}
       </div>
       
-        <div className='df-card-header'>
-          <div className='card-header-name'>
-            {props.card.dfname}
-          </div>
-          <div className='card-header-cmc'>
-            {props.card.dfcmc}
-          </div>
+      <div className='df-card-header'>
+        <div className='card-header-name'>
+          {props.card.dfname}
         </div>
+        <div className='card-header-cmc'>
+          {props.card.dfcmc}
+        </div>
+      </div>
       
     </div>
   );
