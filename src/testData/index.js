@@ -44,13 +44,27 @@ export const cards = [
     cmc:'{U}',
     pt: '1/1',
     dfname:'Insectile Aberration',
-    dfcmc:'{U}',
+    // dfcmc:'{U}',
     dftype:'Creature - Human Insect',
     dfbody:[
       'Flying'  
     ],
     dfpt: '3/2'
-
   },
+  {
+    name: "Nezumi Graverobber",
+    cmc: "{1}{B}",
+    type: "Creature — Rat Rogue",
+    body: [
+      "{1}{B}: Exile target card from an opponent's graveyard. If no cards are in that graveyard, flip Nezumi Graverobber.",
+    ],
+    pt: '2/1',
+    dfname: 'Nighteyes the Desecrator',
+    dftype: 'Legendary Creature — Rat Wizard',
+    dfpt: '4/2',
+    dfbody: [
+      '{4}{B}: Put target creature card from a graveyard onto the battlefield under your control.'
+    ]
+  }
 ]
 

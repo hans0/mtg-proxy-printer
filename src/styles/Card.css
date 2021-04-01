@@ -5,7 +5,7 @@
   height: 319px;
   /* flex-direction: column; */
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
   /* justify-content: flex-end; */
 
@@ -24,14 +24,16 @@
 .card-header-name {
   text-align: left;
   font-size: .9em;
+  padding:2px;
+  font-weight: 700;
 
   /* border: 1px solid black; */
 }
 
-/* .card-header-cmc {
-
-  border: 1px solid black;
-} */
+.card-header-cmc {
+  padding: 2px;
+  /* border: 1px solid black; */
+}
 
 .card-body {
   font-size: .7em;
@@ -45,6 +47,10 @@
   /* border: 1px solid black; */
 }
 
+.card-body-type {
+  font-weight: 625;
+}
+
 .card-body-line {
 
   /* text-align: left; */
@@ -56,13 +62,22 @@
   display: flex;
   justify-content: flex-end;
   padding:10px;
+  font-weight: 500;
+
 }
 
 .df-card-power-toughness {
   display: flex;
   justify-content: flex-end;
   padding:10px;
-  transform: rotate(180deg)
+  font-weight: 500;
+
+  transform: rotate(180deg);
+}
+
+.df-card-body-type {
+  font-weight: 500;
+  transform:rotate(180deg);
 }
 
 .df-card-header {

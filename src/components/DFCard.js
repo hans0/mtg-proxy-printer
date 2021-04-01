@@ -41,15 +41,28 @@ const DFCard = (props) => {
             {line}
           </div>
         )}
+        <div className='df-card-body-type'>
+          {props.card.dftype}
+        </div>
       </div>
       
       <div className='df-card-header'>
         <div className='card-header-name'>
           {props.card.dfname}
         </div>
+        {/* {props.card.dfcmc ?
+          <div className='card-header-cmc'>
+            {props.card.dfcmc}
+          </div>
+          :
+          <div className='card-header-cmc'>
+            {props.card.cmc}
+          </div>
+        } */}
         <div className='card-header-cmc'>
-          {props.card.dfcmc}
+          {props.card.dfcmc ? props.card.dfcmc : props.card.cmc}
         </div>
+        
       </div>
       
     </div>

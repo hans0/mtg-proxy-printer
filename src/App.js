@@ -30,7 +30,7 @@ function App() {
       <Card card={cards[1]}/>
       <DFCard card={cards[2]}/>
       <DFCard card={cards[3]}/>
-      <Card card={cards[0]}/>
+      <DFCard card={cards[4]}/>
       <Card card={cards[0]}/>
 
     </div>
