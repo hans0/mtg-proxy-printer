@@ -1,10 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Card from './components/Card';
+import DFCard from './components/DFCard';
+
+import { cards } from './testData';
+
 function App() {
+
+  console.log(cards);
+
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +25,14 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Card card={cards[0]}/>
+      <Card card={cards[1]}/>
+      <DFCard card={cards[2]}/>
+      <Card card={cards[0]}/>
+      <Card card={cards[0]}/>
+      <Card card={cards[0]}/>
+
     </div>
   );
 }

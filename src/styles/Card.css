@@ -1,0 +1,77 @@
+.card {
+  width: 235px;
+  /* max-width: 300px; */
+  /* height: 350px; */
+  height: 319px;
+  /* flex-direction: column; */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+
+  border: 1px solid black;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
+  font-size: .8em;
+
+  border: 1px solid black;
+}
+
+.card-header-name {
+  text-align: left;
+  font-size: .9em;
+
+  border: 1px solid black;
+}
+
+.card-header-cmc {
+
+  border: 1px solid black;
+}
+
+.card-body {
+  font-size: .7em;
+  display: flex;
+  /* flex-flow: column-wrap; */
+  /* font-size: 2em; */
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+  /* border: 1px solid black; */
+}
+.card-body-line {
+
+  /* text-align: left; */
+  border: 1px solid black;
+
+}
+
+.card-power-toughness {
+  display: flex;
+  justify-content: flex-end;
+  padding:10px;
+}
+
+.df-card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
+  font-size: .8em;
+
+  transform: rotate(180deg);
+
+  border: 1px solid black;
+}
+
+/* .df-card-body {
+  transform: rotate(180deg)
+} */
+
+/* .df-card-body-line {
+  transform: rotate(180deg);
+} */
