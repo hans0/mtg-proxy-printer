@@ -16,15 +16,15 @@ function App() {
     <div className="App">
       {/* Manually showing card display */}
       
-      
+{/*       
       <Card card={cards[0]}/>
       <Card card={cards[1]}/>
       <DFCard card={cards[2]}/>
       <DFCard card={cards[3]}/>
       <DFCard card={cards[4]}/>
-     
+      */}
 
-      {/* <TestCardDisplay /> */}
+      <TestCardDisplay />
 
     </div>
   );

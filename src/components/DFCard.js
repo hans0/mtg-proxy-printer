@@ -28,14 +28,15 @@ const DFCard = (props) => {
       </div>
       {/* Leaving this in helps with layout for non-creature cards */}
       <div className='card-power-toughness'>
-        {props.card.pt}
+        {props.card.pt ? props.card.pt : props.card.loyalty}
       </div>
       {props.card.dfpt && 
         <div className='df-card-power-toughness'>
-          {props.card.dfpt}
+          {props.card.dfpt ? props.card.dfpt : props.card.dfloyalty}
         </div>
       }
       <div className='card-body'>
+      {/* <div className='df-card-body'> */}
         {props.card.dfbody.map((line) => 
           <div className='df-card-body-line'>
             {line}

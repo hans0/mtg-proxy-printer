@@ -65,6 +65,27 @@ export const cards = [
     dfbody: [
       '{4}{B}: Put target creature card from a graveyard onto the battlefield under your control.'
     ]
+  },
+  {
+    name: 'Rowan, Scholar of Sparks',
+    cmc: '{2}{R}',
+    type: 'Legendary Planeswalker — Rowan',
+    body: [
+      'Instant and sorcery spells you cast cost {1} less to cast.',
+      '+1: Rowan, Scholar of Sparks deals 1 damage to each opponent. If you\'ve drawn three or more cards this turn, she deals 3 damage to each opponent instead.',
+      '−4: You get an emblem with \"Whenever you cast an instant or sorcery spell, you may pay {2}. If you do, copy that spell. You may choose new targets for the copy.'
+    ],
+    pt: '2',
+    dfname: 'Will, Scholar of Frost',
+    dftype: 'Legendary Planeswalker — Will',
+    dfcmc: '{4}{U}',
+    dfbody: [
+      'Instant and sorcery spells you cast cost {1} less to cast.',
+      '+1: Up to one target creature has base power and toughness 0/2 until your next turn.',
+      '−3: Draw two cards.',
+      '−7: Exile up to five target permanents. For each permanent exiled this way, its controller creates a 4/4 blue and red Elemental Creature token.'
+    ],
+    dfpt: '4'
   }
 ]
 

@@ -44,7 +44,7 @@ const Card = (props) => {
       </div>
       {/* Leaving this in helps with layout for non-creature cards */}
       <div className='card-power-toughness'>
-        {props.card.pt}
+        {props.card.pt ? props.card.pt : props.card.loyalty}
       </div>
     </div>
   );
