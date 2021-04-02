@@ -23,6 +23,8 @@ const DFCard = (props) => {
   const length = lineAndTextCount(card)['textLength'];
   console.log(length)
 
+  const lengthThreshold = 450;
+
   return(
     <div className='card'>
       <div className='card-header'>
@@ -34,7 +36,8 @@ const DFCard = (props) => {
           {props.card.cmc}
         </div>
       </div>
-      <div className='card-body tiny'>
+      {/* <div className='card-body tiny'>       */}
+      <div className={`card-body ${length > lengthThreshold ? 'tiny' : ''}`}>
         <div className='card-body-type'>
           {props.card.type}
         </div>
@@ -60,8 +63,11 @@ const DFCard = (props) => {
         <div className='df-card-power-toughness'>
           {props.card.dfpt ? props.card.dfpt : props.card.dfloyalty}
         </div>
+        
       } */}
-      <div className='df-card-body tiny'>
+      {/* <div className='df-card-body tiny'> */}
+      <div className={`df-card-body ${length > lengthThreshold ? 'tiny' : ''}`}>
+
         <div className='card-body-type'>
           {props.card.dftype}
         </div>

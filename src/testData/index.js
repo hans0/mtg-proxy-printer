@@ -145,7 +145,7 @@ export const cards = [
       `−3: You may cast target instant or sorcery card from your graveyard this turn. If that spell would be put into your graveyard this turn, exile it instead.`,
       `−9: You get an emblem with "Whenever you cast a spell, target opponent mills five cards."`
     ], 
-    dfpt: ''
+    dfpt: '5'
   }
 ]
 
