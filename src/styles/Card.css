@@ -92,9 +92,23 @@
 }
 
 .df-card-body {
+  font-size: .7em;
+  display: flex;
+  
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+
   transform: rotate(180deg)
 }
 
 .df-card-body-line {
   transform: rotate(180deg);
+}
+
+/* need to make this conditional */
+.tiny {
+  /* .5em seems better, just need to have duel-facing cards P/T slash loyalty on the same line? */
+  font-size: .4em;
 }

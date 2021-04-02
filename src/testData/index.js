@@ -24,7 +24,7 @@ export const cards = [
     body: [
       'Vigilance',
       '{T}: Add one mana of any color.',
-      'Other legendary creatures you control have vigilance and \"{T}: Add one mana of any color.\"'
+      'Other legendary creatures you control have vigilance and "{T}: Add one mana of any color."'
     ],
     cmc:'{1}{G}{G}',
     pt: '1/4',
@@ -63,7 +63,7 @@ export const cards = [
     dftype: 'Legendary Creature — Rat Wizard',
     dfpt: '4/2',
     dfbody: [
-      '{4}{B}: Put target creature card from a graveyard onto the battlefield under your control.'
+      '{4}{B}: Put target creature card from a graveyard onto the battlefield under your control.',
     ]
   },
   {
@@ -73,7 +73,7 @@ export const cards = [
     body: [
       'Instant and sorcery spells you cast cost {1} less to cast.',
       '+1: Rowan, Scholar of Sparks deals 1 damage to each opponent. If you\'ve drawn three or more cards this turn, she deals 3 damage to each opponent instead.',
-      '−4: You get an emblem with \"Whenever you cast an instant or sorcery spell, you may pay {2}. If you do, copy that spell. You may choose new targets for the copy.'
+      '−4: You get an emblem with "Whenever you cast an instant or sorcery spell, you may pay {2}. If you do, copy that spell. You may choose new targets for the copy."'
     ],
     pt: '2',
     dfname: 'Will, Scholar of Frost',
@@ -86,6 +86,48 @@ export const cards = [
       '−7: Exile up to five target permanents. For each permanent exiled this way, its controller creates a 4/4 blue and red Elemental Creature token.'
     ],
     dfpt: '4'
+  },
+  {
+    name: 'Nicol Bolas, the Ravager',
+    cmc: '{1}{U}{B}{R}',
+    type: 'Legendary Creature — Elder Dragon',
+    body: [
+      `Flying`,
+      `When Nicol Bolas, the Ravager enters the battlefield, each opponent discards a card.`,
+      `{4}{U}{B}{R}: Exile Nicol Bolas, the Ravager, then return him to the battlefield transformed under his owner's control. Activate this ability only any time you could cast a sorcery.`
+    ],
+    pt: '4/4',
+    dfname: 'Nicol Bolas, the Arisen',
+    dftype: 'Legendary Planeswalker — Bolas',
+    dfcmc: '(same)',
+    dfbody: [
+      `+2: Draw two cards.`,
+      `−3: Nicol Bolas, the Arisen deals 10 damage to target creature or planeswalker.`,
+      `−4: Put target creature or planeswalker card from a graveyard onto the battlefield under your control.`,
+      `−12: Exile all but the bottom card of target player's library.`
+    ], 
+    dfpt: '7'
+  },
+  {
+    name: 'Garruk Relentless',
+    cmc: '{3}{G}',
+    type: 'Legendary Planeswalker — Garruk',
+    body: [
+      `When Garruk Relentless has two or fewer loyalty counters on him, transform him.`,
+      `0: Garruk Relentless deals 3 damage to target creature. That creature deals damage equal to its power to him.`,
+      `0: Create a 2/2 green Wolf creature token.`
+    ], 
+    pt: '3', 
+    dfname: 'Garruk, the Veil-Cursed',
+    dftype: 'Legendary Planeswalker — Garruk',
+    dfcmc: '(same)',
+    dfbody: [
+      `[[[ something about being B/G ]]]`,
+      `+1: Create a 1/1 black Wolf creature token with deathtouch.`,
+      `−1: Sacrifice a creature. If you do, search your library for a creature card, reveal it, put it into your hand, then shuffle your library.`,
+      `−3: Creatures you control gain trample and get +X/+X until end of turn, where X is the number of creature cards in your graveyard.`
+    ], 
+    dfpt: '7'
   }
 ]
 

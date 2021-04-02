@@ -1,9 +1,27 @@
 import '../styles/Card.css'
 
+const lineAndTextCount = (card) => {
+  let textCount = 0;
+  card.body.forEach((l) => {
+    textCount += l.length;
+  })
+  card.dfbody.forEach((l) => {
+      textCount += l.length;
+  })
+
+  console.log('textCount: ', textCount)
+
+  return {textLength: textCount};
+  
+}
+
+
 const DFCard = (props) => {
 
   const { card } = props;
   console.log(card);
+  lineAndTextCount(card);
+
 
   return(
     <div className='card'>
@@ -16,7 +34,7 @@ const DFCard = (props) => {
           {props.card.cmc}
         </div>
       </div>
-      <div className='card-body'>
+      <div className='card-body tiny'>
         <div className='card-body-type'>
           {props.card.type}
         </div>
@@ -35,16 +53,16 @@ const DFCard = (props) => {
           {props.card.dfpt ? props.card.dfpt : props.card.dfloyalty}
         </div>
       }
-      <div className='card-body'>
+      <div className='df-card-body tiny'>
+        <div className='card-body-type'>
+          {props.card.dftype}
+        </div>
       {/* <div className='df-card-body'> */}
         {props.card.dfbody.map((line) => 
-          <div className='df-card-body-line'>
+          <div className='card-body-line'>
             {line}
           </div>
         )}
-        <div className='df-card-body-type'>
-          {props.card.dftype}
-        </div>
       </div>
       
       <div className='df-card-header'>

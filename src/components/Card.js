@@ -1,4 +1,4 @@
-import react from 'react';
+// import react from 'react';
 
 import '../styles/Card.css'
 
@@ -7,15 +7,15 @@ import '../styles/Card.css'
 
 const Card = (props) => {
 
-  const lurrusBody = `
-    Companion — Each permanent card in your starting deck has converted mana cost 2 or less. (If this card is your chosen companion, you may put it into your hand from outside the game for 3 any time you could cast a sorcery.)
-    Lifelink
-    \nDuring each of your turns, you may cast one permanent spell with converted mana cost 2 or less from your graveyard.
-  `
-  const lurrusCardType = 'Legendary Creature - Cat Nightmare';
-  const lurrusBodyLine1 = 'Companion — Each permanent card in your starting deck has converted mana cost 2 or less. (If this card is your chosen companion, you may put it into your hand from outside the game for 3 any time you could cast a sorcery.)'
-  const lurrusBodyLine2 = 'Lifelink';
-  const lurrusBodyLine3 = 'During each of your turns, you may cast one permanent spell with converted mana cost 2 or less from your graveyard.';
+  // const lurrusBody = `
+  //   Companion — Each permanent card in your starting deck has converted mana cost 2 or less. (If this card is your chosen companion, you may put it into your hand from outside the game for 3 any time you could cast a sorcery.)
+  //   Lifelink
+  //   \nDuring each of your turns, you may cast one permanent spell with converted mana cost 2 or less from your graveyard.
+  // `
+  // const lurrusCardType = 'Legendary Creature - Cat Nightmare';
+  // const lurrusBodyLine1 = 'Companion — Each permanent card in your starting deck has converted mana cost 2 or less. (If this card is your chosen companion, you may put it into your hand from outside the game for 3 any time you could cast a sorcery.)'
+  // const lurrusBodyLine2 = 'Lifelink';
+  // const lurrusBodyLine3 = 'During each of your turns, you may cast one permanent spell with converted mana cost 2 or less from your graveyard.';
 
   const { card } = props;
 
