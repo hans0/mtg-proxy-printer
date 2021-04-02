@@ -66,12 +66,25 @@
 
 }
 
-.df-card-power-toughness {
+/* .df-card-power-toughness {
   display: flex;
   justify-content: flex-end;
   padding:10px;
   font-weight: 500;
 
+  transform: rotate(180deg);
+} */
+
+.df-card-power-toughness {
+  display: flex;
+  justify-content: space-between;
+  padding:10px;
+  font-weight: 500;
+
+  /* transform: rotate(180deg); */
+}
+
+.rotate {
   transform: rotate(180deg);
 }
 
@@ -108,7 +121,7 @@
 }
 
 /* need to make this conditional */
+/* .5em seems better, just need to have duel-facing cards P/T slash loyalty on the same line? */
 .tiny {
-  /* .5em seems better, just need to have duel-facing cards P/T slash loyalty on the same line? */
-  font-size: .4em;
+  font-size: .5em;
 }

@@ -1,32 +1,32 @@
 export const cards = [
   {
     name:'Lurrus of the Dream Den',
+    cmc:'{1}{W/B}{W/B}',
     type:'Legendary Creature - Cat Nightmare',
     body: [
       'Companion — Each permanent card in your starting deck has converted mana cost 2 or less. (If this card is your chosen companion, you may put it into your hand from outside the game for 3 any time you could cast a sorcery.)',
       'Lifelink',
       'During each of your turns, you may cast one permanent spell with converted mana cost 2 or less from your graveyard.'
     ],
-    cmc:'{1}{W/B}{W/B}',
     pt: '3/2'
   },
   {
     name:'Lightning Bolt',
+    cmc:'{R}',
     type:'Instant',
     body: [
       'Lightning Bolt deals 3 damage to any target.'
     ],
-    cmc:'{R}'
   },
   {
     name:'Esika, God of the Tree', 
+    cmc:'{1}{G}{G}',
     type:'Legendary Creature — God',
     body: [
       'Vigilance',
       '{T}: Add one mana of any color.',
       'Other legendary creatures you control have vigilance and "{T}: Add one mana of any color."'
     ],
-    cmc:'{1}{G}{G}',
     pt: '1/4',
     dfname:'Primastic Bridge',
     dfcmc:'{W}{U}{B}{R}{G}',
@@ -37,11 +37,11 @@ export const cards = [
   },
   {
     name:'Delver of Secrets', 
+    cmc:'{U}',
     type:'Creature — Human Wizard',
     body: [
       'At the beginning of your upkeep, look at the top card of your library. You may reveal that card. If an instant or sorcery card is revealed this way, transform Delver of Secrets.'    
     ],
-    cmc:'{U}',
     pt: '1/1',
     dfname:'Insectile Aberration',
     // dfcmc:'{U}',
@@ -128,6 +128,24 @@ export const cards = [
       `−3: Creatures you control gain trample and get +X/+X until end of turn, where X is the number of creature cards in your graveyard.`
     ], 
     dfpt: '7'
+  },
+  {
+    name: `Jace, Vryn's Prodigy`,
+    cmc: '{1}{U}',
+    type: 'Legendary Creature — Human Wizard',
+    body: [
+      `{T}: Draw a card, then discard a card. If there are five or more cards in your graveyard, exile Jace, Vryn's Prodigy, then return him to the battlefield transformed under his owner's control.`
+    ],
+    pt: '0/2',
+    dfname: 'Jace, Telepath Unbound', 
+    dfcmc: '', 
+    dftype: 'Legendary Planeswalker — Jace', 
+    dfbody: [
+      `+1: Up to one target creature gets -2/-0 until your next turn.`,
+      `−3: You may cast target instant or sorcery card from your graveyard this turn. If that spell would be put into your graveyard this turn, exile it instead.`,
+      `−9: You get an emblem with "Whenever you cast a spell, target opponent mills five cards."`
+    ], 
+    dfpt: ''
   }
 ]
 

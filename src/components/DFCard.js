@@ -20,8 +20,8 @@ const DFCard = (props) => {
 
   const { card } = props;
   console.log(card);
-  lineAndTextCount(card);
-
+  const length = lineAndTextCount(card)['textLength'];
+  console.log(length)
 
   return(
     <div className='card'>
@@ -45,14 +45,22 @@ const DFCard = (props) => {
         )}
       </div>
       {/* Leaving this in helps with layout for non-creature cards */}
-      <div className='card-power-toughness'>
+      <div className='df-card-power-toughness'>
+        <div className='rotate'>
+          {props.card.dfpt}
+        </div>
+        <div>
+          {props.card.pt}
+        </div>
+      </div>
+      {/* <div className='card-power-toughness'>
         {props.card.pt ? props.card.pt : props.card.loyalty}
       </div>
       {props.card.dfpt && 
         <div className='df-card-power-toughness'>
           {props.card.dfpt ? props.card.dfpt : props.card.dfloyalty}
         </div>
-      }
+      } */}
       <div className='df-card-body tiny'>
         <div className='card-body-type'>
           {props.card.dftype}
