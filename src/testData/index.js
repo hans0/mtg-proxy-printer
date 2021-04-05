@@ -146,6 +146,82 @@ export const cards = [
       `−9: You get an emblem with "Whenever you cast a spell, target opponent mills five cards."`
     ], 
     dfpt: '5'
+  },
+  {
+    name: `Kytheon, Hero of Akros`,
+    cmc: '{W}',
+    type: 'Legendary Creature — Human Soldier',
+    body: [
+      `At end of combat, if Kytheon, Hero of Akros and at least two other creatures attacked this combat, exile Kytheon, then return him to the battlefield transformed under his owner's control.`,
+      `{2}{W}: Kytheon gains indestructible until end of turn.`
+    ],
+    pt: '2/1',
+    dfname: 'Gideon, Battle-Forged', 
+    dfcmc: '', 
+    dftype: 'Legendary Planeswalker — Gideon', 
+    dfbody: [
+      `+2: Up to one target creature an opponent controls attacks Gideon, Battle-Forged during its controller's next turn if able.`,
+      `+1: Until your next turn, target creature gains indestructible. Untap that creature.`,
+      `0: Until end of turn, Gideon, Battle-Forged becomes a 4/4 Human Soldier creature with indestructible that's still a planeswalker. Prevent all damage that would be dealt to him this turn.`
+    ], 
+    dfpt: '3'
+  },
+  {
+    name: `Arlinn Kord`,
+    cmc: '{2}{R}{G}',
+    type: 'Legendary Planeswalker — Arlinn',
+    body: [
+      `+1: Until end of turn, up to one target creature gets +2/+2 and gains vigilance and haste.`,
+      `0: Create a 2/2 green Wolf creature token. Transform Arlinn Kord.`
+    ],
+    pt: '3',
+    dfname: 'Arlinn, Embraced by the Moon', 
+    dfcmc: '', 
+    dftype: 'Legendary Planeswalker — Arlinn', 
+    dfbody: [
+      `+1: Creatures you control get +1/+1 and gain trample until end of turn.`,
+      `−1: Arlinn, Embraced by the Moon deals 3 damage to any target. Transform Arlinn, Embraced by the Moon.`,
+      `−6: You get an emblem with \"Creatures you control have haste and '{T}: This creature deals damage equal to its power to any target.'\"`
+    ], 
+    dfpt: '-'
+  },
+  {
+    name: `Valki, God of Lies`,
+    cmc: '{1}{B}',
+    type: 'Legendary Creature — God',
+    body: [
+      `When Valki enters the battlefield, each opponent reveals their hand. For each opponent, exile a creature card they revealed this way until Valki leaves the battlefield.`,,
+      `{X}: Choose a creature card exiled with Valki with converted mana cost X. Valki becomes a copy of that c`
+    ],
+    pt: '2/1',
+    dfname: 'Tibalt, Cosmic Impostor', 
+    dfcmc: '{5}{B}{R}', 
+    dftype: 'Legendary Planeswalker — Tibalt', 
+    dfbody: [
+      `As Tibalt enters the battlefield, you get an emblem with \"You may play cards exiled with Tibalt, Cosmic Impostor, and you may spend mana as though it were mana of any color to cast those spells.\"`,
+      `+2: Exile the top card of each player's library.`,
+      `−3: Exile target artifact or creature.`,
+      `−8: Exile all cards from all graveyards. Add {R}{R}{R}.`
+    ], 
+    dfpt: '5'
   }
 ]
 
+/*
+{
+  name: ``,
+  cmc: '',
+  type: '',
+  body: [
+    ``
+  ],
+  pt: '',
+  dfname: '', 
+  dfcmc: '', 
+  dftype: '', 
+  dfbody: [
+    ``
+  ], 
+  dfpt: ''
+}
+*/
