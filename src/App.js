@@ -1,29 +1,31 @@
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+
 // import logo from './logo.svg';
 import './App.css';
 
-// import Card from './components/Card';
-// import DFCard from './components/DFCard';
 
 import TestCardDisplay from './components/TestCardDisplay';
-
-// import { cards } from './testData';
+import SingleCardGet from './components/SingleCardGet';
 
 function App() {
 
-  // console.log(cards);
-
   return (
     <div className="App">
-      {/* Manually showing card display */}
-      {/*       
-        <Card card={cards[0]}/>
-        <Card card={cards[1]}/>
-        <DFCard card={cards[2]}/>
-        <DFCard card={cards[3]}/>
-        <DFCard card={cards[4]}/>
-      */}
-
-      <TestCardDisplay />
+      <Router>
+        <Switch>
+          <Route exact path='/' >
+            <TestCardDisplay />
+          </Route>
+          <Route path='/single'>
+            <SingleCardGet />
+          </Route>
+        </Switch>
+      </Router>
 
     </div>
   );

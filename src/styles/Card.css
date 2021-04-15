@@ -125,3 +125,10 @@
 .tiny {
   font-size: .5em;
 }
+
+.search-test {
+  width: 472px;
+  height: 321px;
+  margin: 20 auto;
+  border: 1px solid black;
+}
