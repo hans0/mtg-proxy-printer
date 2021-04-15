@@ -8,7 +8,7 @@ import './index.css';
 import App from './App';
 import { reducer } from './reducers';
 
-import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
 
 const store = createStore(reducer, applyMiddleware(thunk));
 

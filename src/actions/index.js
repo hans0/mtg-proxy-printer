@@ -13,14 +13,14 @@ const formatCard = (scryfallCardData) => {
       cmc: scryfallCardData.card_faces[0].mana_cost,
       type: scryfallCardData.card_faces[0].type_line,
       body: scryfallCardData.card_faces[0].oracle_text.split('\n'),
-      ... scryfallCardData.card_faces[0].power && {pt: scryfallCardData.card_faces[0].power + '/'+scryfallCardData.card_faces[0].toughness},
-      ... scryfallCardData.card_faces[0].loyalty && {pt: scryfallCardData.card_faces[0].loyalty},
+      ...scryfallCardData.card_faces[0].power && {pt: scryfallCardData.card_faces[0].power + '/'+scryfallCardData.card_faces[0].toughness},
+      ...scryfallCardData.card_faces[0].loyalty && {pt: scryfallCardData.card_faces[0].loyalty},
       dfname: scryfallCardData.card_faces[1].name,
       dfcmc: scryfallCardData.card_faces[1].mana_cost,
       dftype: scryfallCardData.card_faces[1].type_line,
       dfbody: scryfallCardData.card_faces[1].oracle_text.split('\n'),
-      ... scryfallCardData.card_faces[1].power && {pt: scryfallCardData.card_faces[1].power + '/'+scryfallCardData.card_faces[1].toughness},
-      ... scryfallCardData.card_faces[1].loyalty && {pt: scryfallCardData.card_faces[1].loyalty}
+      ...scryfallCardData.card_faces[1].power && {pt: scryfallCardData.card_faces[1].power + '/'+scryfallCardData.card_faces[1].toughness},
+      ...scryfallCardData.card_faces[1].loyalty && {pt: scryfallCardData.card_faces[1].loyalty}
 
     
     }
@@ -31,8 +31,8 @@ const formatCard = (scryfallCardData) => {
     cmc: scryfallCardData.mana_cost,
     type: scryfallCardData.type_line,
     body: scryfallCardData.oracle_text.split('\n'),
-    ... scryfallCardData.power && {pt: scryfallCardData.power + '/'+scryfallCardData.toughness},
-    ... scryfallCardData.loyalty && {pt: scryfallCardData.loyalty}
+    ...scryfallCardData.power && {pt: scryfallCardData.power + '/'+scryfallCardData.toughness},
+    ...scryfallCardData.loyalty && {pt: scryfallCardData.loyalty}
   }
   console.log('after format', formattedData)
   

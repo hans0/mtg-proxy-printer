@@ -181,7 +181,7 @@ export const cards = [
     dfbody: [
       `+1: Creatures you control get +1/+1 and gain trample until end of turn.`,
       `−1: Arlinn, Embraced by the Moon deals 3 damage to any target. Transform Arlinn, Embraced by the Moon.`,
-      `−6: You get an emblem with \"Creatures you control have haste and '{T}: This creature deals damage equal to its power to any target.'\"`
+      `−6: You get an emblem with "Creatures you control have haste and '{T}: This creature deals damage equal to its power to any target.'"`
     ], 
     dfpt: '-'
   },
@@ -190,7 +190,7 @@ export const cards = [
     cmc: '{1}{B}',
     type: 'Legendary Creature — God',
     body: [
-      `When Valki enters the battlefield, each opponent reveals their hand. For each opponent, exile a creature card they revealed this way until Valki leaves the battlefield.`,,
+      `When Valki enters the battlefield, each opponent reveals their hand. For each opponent, exile a creature card they revealed this way until Valki leaves the battlefield.`,
       `{X}: Choose a creature card exiled with Valki with converted mana cost X. Valki becomes a copy of that c`
     ],
     pt: '2/1',
@@ -198,7 +198,7 @@ export const cards = [
     dfcmc: '{5}{B}{R}', 
     dftype: 'Legendary Planeswalker — Tibalt', 
     dfbody: [
-      `As Tibalt enters the battlefield, you get an emblem with \"You may play cards exiled with Tibalt, Cosmic Impostor, and you may spend mana as though it were mana of any color to cast those spells.\"`,
+      `As Tibalt enters the battlefield, you get an emblem with "You may play cards exiled with Tibalt, Cosmic Impostor, and you may spend mana as though it were mana of any color to cast those spells."`,
       `+2: Exile the top card of each player's library.`,
       `−3: Exile target artifact or creature.`,
       `−8: Exile all cards from all graveyards. Add {R}{R}{R}.`
