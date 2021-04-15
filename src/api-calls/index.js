@@ -9,7 +9,8 @@ const getCard = (cardName) => {
     body: [],
     pt: '',
   }
-  axios.get(`https://api.scryfall.com/cards/named?fuzzy=${cardName}`)
+  console.log(`api-calls`, cardName)
+  axios.get(`https://api.scryfall.com/cards/named?fuzzy={${cardName}}`)
     .then((res) => {
       console.log(res.data);
       card.id = res.data.multiverse_ids[0];

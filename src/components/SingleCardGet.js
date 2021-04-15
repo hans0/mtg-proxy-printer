@@ -1,27 +1,54 @@
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
 
 import Card from './Card';
-import getCard from '../api-calls';
+import DFCard from './DFCard';
+import { getCard } from '../actions';
 
+const SingleCardGet = (props) => {
+  const [cardSearch, setCardSearch] = useState('Lurrus, of the Dream Den');
 
+  const { card } = props;
 
-const SingleCardGet = () => {
-  
-  // const [card, setCard] = useState({});
+  const handleChanges = e => {
+    setCardSearch(e.target.value);
+  }
 
-  var card= {};
-
-  useEffect(() => {
-    card = getCard('Drown in the Loch');
-    console.log(card)
-  }, []);
-  
+  const handleClick = () => {
+    props.getCard(cardSearch);
+  }
 
   return (
-    <div>
-      {card.name ? <Card card={card} /> : <></>}
+    <>
+    <div className='search-test'>
+      Single Card Get
+        <input 
+          type='text' 
+          value={cardSearch}
+          onChange={handleChanges}
+        />
+      
+        <button onClick={handleClick}>Search</button>
     </div>
-  );
+    {card === null ? 
+      <>Searching...</>: 
+      card.dfname === null ? 
+        <Card key={card.name} card={card} />:
+        <DFCard key={card.name} card={card} />
+      
+    }
+    {/* {card !== null ? <Card key={card.name} card={card} />: null} */}
+    </>
+  )
+
 }
 
-export default SingleCardGet;
+const mapStateToProps = state => {
+  return {
+    card: state.card,
+    isFetching: state.isFetching,
+    error: state.error
+  }
+}
+
+export default connect(mapStateToProps, { getCard })(SingleCardGet);
