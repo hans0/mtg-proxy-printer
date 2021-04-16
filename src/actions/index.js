@@ -7,6 +7,7 @@ export const FETCH_CARD_FAIL = "FETCH_CARD_FAIL"
 
 const formatCard = (scryfallCardData) => {
   // console.log(`formatCard in actions:`, scryfallCardData);
+  console.log(...scryfallCardData.card_faces ? 'dual': 'single')
   if (scryfallCardData.card_faces) {
     const formattedDualData = {
       name: scryfallCardData.card_faces[0].name,
@@ -16,13 +17,12 @@ const formatCard = (scryfallCardData) => {
       ...scryfallCardData.card_faces[0].power && {pt: scryfallCardData.card_faces[0].power + '/'+scryfallCardData.card_faces[0].toughness},
       ...scryfallCardData.card_faces[0].loyalty && {pt: scryfallCardData.card_faces[0].loyalty},
       dfname: scryfallCardData.card_faces[1].name,
+      // TODO: if CMC is the same (flip planeswalkers), don't publish
       dfcmc: scryfallCardData.card_faces[1].mana_cost,
       dftype: scryfallCardData.card_faces[1].type_line,
       dfbody: scryfallCardData.card_faces[1].oracle_text.split('\n'),
       ...scryfallCardData.card_faces[1].power && {pt: scryfallCardData.card_faces[1].power + '/'+scryfallCardData.card_faces[1].toughness},
       ...scryfallCardData.card_faces[1].loyalty && {pt: scryfallCardData.card_faces[1].loyalty}
-
-    
     }
     return formattedDualData;
   }
