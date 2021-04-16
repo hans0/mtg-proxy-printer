@@ -32,9 +32,16 @@ const SingleCardGet = (props) => {
     </div>
     {card === null ? 
       <>Searching...</>: 
-      card.dfname === null ? 
-        <Card key={card.name} card={card} />:
-        <DFCard key={card.name} card={card} />
+      card.hasOwnProperty('dfname') ?
+        <DFCard key={card.name} card={card} />:
+        <Card key={card.name} card={card} />
+      
+      // <Card key={card.name} card={card} />
+
+      // Attempt 1: breaks for single sided cards
+      // card.dfname === null ? 
+      //   <Card key={card.name} card={card} />:
+      //   <DFCard key={card.name} card={card} />
       
     }
     {/* {card !== null ? <Card key={card.name} card={card} />: null} */}
