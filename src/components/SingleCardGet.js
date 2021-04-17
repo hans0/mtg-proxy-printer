@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Card from './Card';
 import DFCard from './DFCard';
 import { getCard } from '../actions';
+import AdvCard from './AdvCard';
 
 const SingleCardGet = (props) => {
   const [cardSearch, setCardSearch] = useState('Lurrus, of the Dream Den');
@@ -34,6 +35,7 @@ const SingleCardGet = (props) => {
       <>Searching...</>: 
       card.hasOwnProperty('dfname') ?
         <DFCard key={card.name} card={card} />:
+        card.hasOwnProperty('advname')? <AdvCard key={card.name} card={card} /> :
         <Card key={card.name} card={card} />
       
       // <Card key={card.name} card={card} />

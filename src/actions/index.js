@@ -8,6 +8,27 @@ export const FETCH_CARD_FAIL = "FETCH_CARD_FAIL"
 const formatCard = (scryfallCardData) => {
   // console.log(`formatCard in actions:`, scryfallCardData);
   console.log(...scryfallCardData.card_faces ? 'dual': 'single')
+  console.log(...scryfallCardData.layout === 'adventure'? 'adv': 'not an adventure')
+  if(scryfallCardData.layout === 'adventure'){
+    console.log(`we're going on an adventure`);
+    const formattedAdventureData = {
+      name: scryfallCardData.card_faces[0].name,
+      cmc: scryfallCardData.card_faces[0].mana_cost,
+      type: scryfallCardData.card_faces[0].type_line,
+      body: scryfallCardData.card_faces[0].oracle_text.split('\n'),
+      ...scryfallCardData.card_faces[0].power && {pt: scryfallCardData.card_faces[0].power + '/'+scryfallCardData.card_faces[0].toughness},
+      ...scryfallCardData.card_faces[0].loyalty && {pt: scryfallCardData.card_faces[0].loyalty},
+      advname: scryfallCardData.card_faces[1].name,
+      // TODO: if CMC is the same (flip planeswalkers), don't publish
+      advcmc: scryfallCardData.card_faces[1].mana_cost,
+      advtype: scryfallCardData.card_faces[1].type_line,
+      advbody: scryfallCardData.card_faces[1].oracle_text.split('\n'),
+      // ...scryfallCardData.card_faces[1].power && {pt: scryfallCardData.card_faces[1].power + '/'+scryfallCardData.card_faces[1].toughness},
+      // ...scryfallCardData.card_faces[1].loyalty && {pt: scryfallCardData.card_faces[1].loyalty}
+
+    }
+    return formattedAdventureData;
+  }
   if (scryfallCardData.card_faces) {
     const formattedDualData = {
       name: scryfallCardData.card_faces[0].name,
