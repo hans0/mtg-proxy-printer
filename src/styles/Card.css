@@ -120,6 +120,41 @@
   transform: rotate(180deg);
 }
 
+.adv-card {
+  width:90%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.adv-card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
+  font-size: .8em;
+}
+.adv-card-header-name {
+  text-align: left;
+  font-size: .9em;
+  padding:2px;
+  font-weight: 700;
+
+  /* border: 1px solid black; */
+}
+
+.adv-card-header-cmc {
+  padding: 2px;
+  /* border: 1px solid black; */
+}
+
+.adv-card-body {
+  font-size: .7em;
+  display: flex;
+  
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  text-align: left;
+}
 /* need to make this conditional */
 /* .5em seems better, just need to have duel-facing cards P/T slash loyalty on the same line? */
 .tiny {

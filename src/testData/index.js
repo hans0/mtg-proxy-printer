@@ -204,6 +204,22 @@ export const cards = [
       `−8: Exile all cards from all graveyards. Add {R}{R}{R}.`
     ], 
     dfpt: '5'
+  },
+  {
+    name: 'Bonecrusher Giant',
+    cmc: '{2}{R}',
+    type: 'Creature — Giant',
+    body: [
+      `Whenever Bonecrusher Giant becomes the target of a spell, Bonecrusher Giant deals 2 damage to that spell's controller.`    ],
+    pt: '4/3',
+    advname: 'Stomp',
+    advcmc: '{1}{R}',
+    advtype: 'Instant — Adventure',
+    advbody: [
+      `Damage can't be prevented this turn. Stomp deals 2 damage to any target.`
+    ]
+
+
   }
 ]
 
