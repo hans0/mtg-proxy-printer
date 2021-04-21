@@ -3,9 +3,11 @@
 - Ability to take in decklist from copy-paste
 - Ability to take in decklist txt file
 - Ability to take in decklist link
--- MTGGoldfish
--- MTGTop8
-- Aftermath cards from Amonkhet block
+    - MTGGoldfish
+    - MTGTop8
+- Aftermath cards from Amonkhet block (25 cards)
+    - Might just put them in Adventure format
+- Meld cards from Eldritch Moon set (6 cards)
 
 
 ## Available Scripts
