@@ -32,6 +32,7 @@ const SingleCardGet = (props) => {
         <button onClick={handleClick}>Search</button>
     </div>
     {card === null ? 
+      // TODO: switch statement
       <>Searching...</>: 
       card.hasOwnProperty('dfname') ?
         <DFCard key={card.name} card={card} />:
