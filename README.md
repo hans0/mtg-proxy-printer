@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# MTG Proxy Printer (B/W)
+## To-do List
+- Ability to take in decklist from copy-paste
+- Ability to take in decklist txt file
+- Ability to take in decklist link
+-- MTGGoldfish
+-- MTGTop8
+- Aftermath cards from Amonkhet block
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
