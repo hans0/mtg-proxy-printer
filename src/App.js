@@ -11,6 +11,7 @@ import './App.css';
 
 import TestCardDisplay from './components/TestCardDisplay';
 import SingleCardGet from './components/SingleCardGet';
+import ProxyList from './components/ProxyList';
 
 function App() {
 
@@ -19,10 +20,13 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' >
-            <TestCardDisplay />
+            <ProxyList />
           </Route>
           <Route path='/single'>
             <SingleCardGet />
+          </Route>
+          <Route path='/test'>
+            <TestCardDisplay />
           </Route>
         </Switch>
       </Router>

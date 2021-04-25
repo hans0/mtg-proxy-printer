@@ -93,6 +93,7 @@ const DFCard = (props) => {
           </div>
         } */}
         <div className='card-header-cmc'>
+          {/* {props.card.dfcmc ? props.card.dfcmc : props.card.cmc} */}
           {props.card.dfcmc ? props.card.dfcmc : props.card.cmc}
         </div>
         

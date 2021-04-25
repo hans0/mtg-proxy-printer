@@ -8,8 +8,13 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   /* justify-content: flex-end; */
+  border-right: 1px dotted gray;
+  border-bottom: 1px dotted gray;
+  /* border: 1px solid black; */
+}
 
-  border: 1px solid black;
+.filler-side {
+  border-right: 1px dotted grey;
 }
 
 .card-header {
@@ -65,15 +70,6 @@
   font-weight: 500;
 
 }
-
-/* .df-card-power-toughness {
-  display: flex;
-  justify-content: flex-end;
-  padding:10px;
-  font-weight: 500;
-
-  transform: rotate(180deg);
-} */
 
 .df-card-power-toughness {
   display: flex;
